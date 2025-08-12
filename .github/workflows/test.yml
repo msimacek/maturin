@@ -399,6 +399,11 @@ jobs:
             abi: pp310-pypy310_pp73
             python: pypy3.10
             container: ghcr.io/rust-cross/manylinux2014-cross:aarch64
+          # GraalPy
+          - target: aarch64-unknown-linux-gnu
+            abi: graalpy311-graalpy242_311_native
+            python: graalpy3.11
+            container: ghcr.io/rust-cross/manylinux2014-cross:aarch64
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
